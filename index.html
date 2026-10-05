@@ -3,98 +3,253 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rocky | Personal & Job Profile</title>
-<meta name="description" content="Rocky की Personal और Job Profile Website">
+
+<title>Universal Job - Sarkari Jobs, Results & Admit Card</title>
+<meta name="description" content="Universal Job - Latest Government Jobs, Results, Admit Cards, Answer Keys and Important Updates">
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;background:#f4f7fb;color:#18212f}
-header{background:linear-gradient(135deg,#0b4f9c,#173b72);color:white;padding:55px 20px;text-align:center}
-header h1{font-size:42px;margin-bottom:8px}
-header p{font-size:19px;opacity:.92}
-nav{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 10px #0001;text-align:center;padding:12px}
-nav a{color:#173b72;text-decoration:none;font-weight:bold;margin:0 12px}
-.container{max-width:950px;margin:auto;padding:28px 18px}
-.card{background:white;border-radius:16px;padding:26px;margin-bottom:22px;box-shadow:0 5px 20px #0000000d}
-h2{color:#0b4f9c;margin-bottom:14px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
-.item{background:#f4f7fb;padding:18px;border-radius:12px}
-.badge{display:inline-block;background:#e8f1ff;color:#0b4f9c;padding:6px 12px;border-radius:20px;margin:5px;font-weight:bold}
-.btn{display:inline-block;background:#0b4f9c;color:#fff;text-decoration:none;padding:11px 18px;border-radius:9px;margin-top:12px}
-footer{text-align:center;background:#172033;color:#fff;padding:25px;margin-top:20px}
-.small{color:#667085}
-@media(max-width:600px){header h1{font-size:32px}nav a{margin:0 6px;font-size:14px}.card{padding:20px}}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f1f5f9;
+  color:#222;
+  line-height:1.6;
+}
+
+header{
+  background:linear-gradient(135deg,#063b78,#0b65b3);
+  color:white;
+  text-align:center;
+  padding:25px 15px;
+}
+
+.logo{
+  font-size:36px;
+  font-weight:bold;
+}
+
+.tagline{
+  font-size:17px;
+  margin-top:5px;
+}
+
+nav{
+  background:#062f5d;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  padding:14px 18px;
+  font-weight:bold;
+}
+
+nav a:hover{
+  background:#0b65b3;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
+}
+
+.search{
+  background:white;
+  padding:18px;
+  border-radius:10px;
+  box-shadow:0 2px 8px #ccc;
+  margin-bottom:20px;
+}
+
+.search input{
+  width:100%;
+  padding:13px;
+  border:1px solid #bbb;
+  border-radius:6px;
+  font-size:16px;
+}
+
+.notice{
+  background:#fff3cd;
+  border-left:5px solid #ffb300;
+  padding:15px;
+  margin-bottom:20px;
+  border-radius:6px;
+}
+
+.section-title{
+  background:#063b78;
+  color:white;
+  padding:12px 15px;
+  border-radius:6px;
+  margin:25px 0 12px;
+  font-size:21px;
+}
+
+.card{
+  background:white;
+  border-radius:8px;
+  padding:18px;
+  margin-bottom:12px;
+  box-shadow:0 2px 7px #d0d0d0;
+}
+
+.card h3{
+  color:#063b78;
+  margin-bottom:8px;
+}
+
+.details{
+  font-size:15px;
+  margin-bottom:10px;
+}
+
+.badge{
+  display:inline-block;
+  background:#e8f1ff;
+  color:#063b78;
+  padding:5px 9px;
+  border-radius:4px;
+  margin:3px;
+  font-size:13px;
+  font-weight:bold;
+}
+
+.btn{
+  display:inline-block;
+  background:#087f23;
+  color:white;
+  text-decoration:none;
+  padding:8px 14px;
+  border-radius:5px;
+  margin-top:7px;
+  font-weight:bold;
+}
+
+.btn:hover{
+  background:#055d18;
+}
+
+.category-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:12px;
+}
+
+.category{
+  background:white;
+  padding:20px;
+  text-align:center;
+  border-radius:8px;
+  box-shadow:0 2px 7px #d0d0d0;
+  font-weight:bold;
+  color:#063b78;
+}
+
+footer{
+  background:#062f5d;
+  color:white;
+  text-align:center;
+  padding:25px;
+  margin-top:30px;
+}
+
+@media(max-width:600px){
+  .logo{
+    font-size:28px;
+  }
+
+  nav a{
+    padding:10px 12px;
+    font-size:14px;
+  }
+
+  .container{
+    padding:12px;
+  }
+}
 </style>
 </head>
+
 <body>
 
 <header>
-  <h1>Rocky</h1>
-  <p>ITI Electronic Mechanic | Job Seeker | Technical Skills</p>
+  <div class="logo">Universal Job</div>
+  <div class="tagline">
+    Latest Government Jobs • Results • Admit Card • Answer Key
+  </div>
 </header>
 
 <nav>
-  <a href="#about">About</a>
-  <a href="#education">Education</a>
-  <a href="#skills">Skills</a>
-  <a href="#contact">Contact</a>
+  <a href="#home">Home</a>
+  <a href="#jobs">Latest Jobs</a>
+  <a href="#results">Results</a>
+  <a href="#admit">Admit Card</a>
+  <a href="#answer">Answer Key</a>
 </nav>
 
-<main class="container">
+<main class="container" id="home">
 
-<section class="card" id="about">
-  <h2>👋 मेरे बारे में</h2>
-  <p>
-    नमस्ते! मैं <strong>Rocky</strong> हूँ। मैंने ITI में
-    <strong>Electronic Mechanic</strong> ट्रेड किया है और तकनीकी क्षेत्र में
-    नौकरी के अवसर तलाश रहा हूँ। मेरा लक्ष्य अपनी technical skills को मजबूत
-    करके एक अच्छी सरकारी, PSU या technical job प्राप्त करना है।
-  </p>
-</section>
-
-<section class="card" id="education">
-  <h2>🎓 Education</h2>
-  <div class="grid">
-    <div class="item"><strong>10th</strong><br>70.83%</div>
-    <div class="item"><strong>12th</strong><br>57%</div>
-    <div class="item"><strong>ITI</strong><br>Electronic Mechanic<br>81.54%</div>
-    <div class="item"><strong>BA</strong><br>51%<br>Completed in 2022</div>
+  <div class="notice">
+    <b>📢 Universal Job</b> — सरकारी नौकरी और परीक्षा से जुड़ी महत्वपूर्ण जानकारी एक जगह।
   </div>
-</section>
 
-<section class="card" id="skills">
-  <h2>🛠️ Technical Skills</h2>
-  <span class="badge">Electronic Components</span>
-  <span class="badge">Multimeter</span>
-  <span class="badge">Diode Testing</span>
-  <span class="badge">Transistor Testing</span>
-  <span class="badge">Capacitor</span>
-  <span class="badge">PCB</span>
-  <span class="badge">Soldering</span>
-  <span class="badge">Basic Electronics</span>
-</section>
+  <div class="search">
+    <input
+      type="text"
+      id="searchBox"
+      placeholder="🔎 Job, Result, Admit Card खोजें..."
+      onkeyup="searchItems()">
+  </div>
 
-<section class="card">
-  <h2>🎯 Career Objective</h2>
-  <p>
-    Electronic Mechanic के रूप में अपनी technical knowledge और practical
-    skills का उपयोग करके एक अच्छी technical organization, PSU या सरकारी
-    विभाग में योगदान देना।
-  </p>
-</section>
+  <h2 class="section-title">📌 Important Categories</h2>
 
-<section class="card" id="contact">
-  <h2>📞 Contact</h2>
-  <p class="small">नीचे अपनी जानकारी डालकर इसे personal website के रूप में इस्तेमाल करें।</p>
-  <p><strong>Mobile:</strong> अपना मोबाइल नंबर यहाँ डालें</p>
-  <p><strong>Email:</strong> अपना ईमेल यहाँ डालें</p>
-  <a class="btn" href="mailto:your@email.com">Email Me</a>
-</section>
+  <div class="category-grid">
+    <div class="category">🏛️ Government Jobs</div>
+    <div class="category">📋 Latest Results</div>
+    <div class="category">🎫 Admit Card</div>
+    <div class="category">📝 Answer Key</div>
+    <div class="category">📚 Syllabus</div>
+    <div class="category">🔔 Latest Updates</div>
+  </div>
 
-</main>
 
-<footer>
-  © 2026 Rocky — Personal & Job Profile
-</footer>
+  <section id="jobs">
+    <h2 class="section-title">🔥 Latest Government Jobs</h2>
 
-</body>
-</html>
+    <div class="card searchable">
+      <h3>Technical Attendant / Technician Recruitment</h3>
+
+      <div class="details">
+        <span class="badge">10th Pass</span>
+        <span class="badge">ITI</span>
+        <span class="badge">Technical</span>
+      </div>
+
+      <p>
+        सरकारी/PSU तकनीकी भर्ती की जानकारी यहाँ प्रकाशित की जाएगी।
+      </p>
+
+      <a href="#" class="btn">View Details</a>
+    </div>
+
+    <div class="card searchable">
+      <h3>Electronic Mechanic Jobs</h3>
+
+      <div class="details">
+        <span class="badge">Electronic Mechanic</span>
+        <span class="badge">ITI</span>
+        <span class="badge">All India</span>
+      </div>
+
+      <p>
+        Electronic Mechanic ITI उम्मीदवारों के लिए नई vacancies यहाँ दिखाई जाए
